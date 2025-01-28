@@ -15,3 +15,7 @@ class ProductPageLocators():
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+
+class BasketPageLocators():
+    BASKET_TOTAL = (By.CSS_SELECTOR, "basket_summary") #блок покупок
+    BASKET_EMPTY = (By.CSS_SELECTOR, "#content_inner>p") #сообщение про пустоту
