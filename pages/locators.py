@@ -15,7 +15,14 @@ class ProductPageLocators():
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketPageLocators():
     BASKET_TOTAL = (By.CSS_SELECTOR, "basket_summary") #блок покупок
     BASKET_EMPTY = (By.CSS_SELECTOR, "#content_inner>p") #сообщение про пустоту
+
+class RegistrationLocators():
+    LOGIN = (By.ID, "id_registration-email")
+    PASS1 = (By.ID, "id_registration-password1")
+    PASS2 = (By.ID, "id_registration-password2")
+    KNOPKA = (By.NAME, "registration_submit")

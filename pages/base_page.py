@@ -35,6 +35,10 @@ class BasePage:
             return True
 
         return False
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
+                                                                     " probably unauthorised user"
+
 
 
 class ProductPage():
@@ -81,6 +85,7 @@ class ProductPage():
         prod_link = self.browser.find_element(By.CSS_SELECTOR, "span.btn-group > a.btn.btn-default")
         prod_link.click()
         time.sleep(2)
+
 
 
 
